@@ -1,24 +1,30 @@
-YouTube Video Downloader (Max 720p)
-This Python script allows you to download YouTube videos (including Shorts) using the pytubefix library.
+````markdown
+# YouTube Video Downloader (Max 720p)
 
-It is designed to download the best progressive stream (max 720p), which includes both video and audio in a single file, avoiding the need for external tools like FFmpeg.
+This Python script allows you to download YouTube videos (including Shorts) using the `pytubefix` library.
 
-Why pytubefix?
-This project uses pytubefix instead of the standard pytube because YouTube frequently updates its site, which often breaks download scripts. pytubefix is a community-maintained fork that is updated more frequently to patch these breaking changes (like the common HTTP Error 400).
+It is designed to download the **best progressive stream (max 720p)**, which includes both video and audio in a single file, avoiding the need for external tools like FFmpeg.
 
-Installation
+## Why `pytubefix`?
+
+This project uses `pytubefix` instead of the standard `pytube` because YouTube frequently updates its site, which often breaks download scripts. `pytubefix` is a community-maintained fork that is updated more frequently to patch these breaking changes (like the common `HTTP Error 400`).
+
+## Installation
+
 Make sure you have Python installed. You can install the required library using pip:
 
-Bash
-
+```bash
 pip install pytubefix
-Usage
-Save the code below as a Python file (e.g., download.py).
+````
 
-Run the script from your terminal.
+## Usage
 
-Python
+1.  Save the code below as a Python file (e.g., `download.py`).
+2.  Run the script from your terminal.
 
+<!-- end list -->
+
+```python
 from pytubefix import YouTube
 from pytubefix.exceptions import VideoUnavailable, AgeRestrictedError
 import os
@@ -71,19 +77,25 @@ def download_video_max_720p(url, download_path="My_Downloads"):
 if __name__ == "__main__":
     
     # URL of the video you want to download
-    video_url = "https://www.youtube.com/shorts/YYnst9xW15U"
+    video_url = "[https://www.youtube.com/shorts/YYnst9xW15U](https://www.youtube.com/shorts/YYnst9xW15U)"
     
     # You can also test with a high-quality video to confirm it only gets 720p
-    # video_url = "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+    # video_url = "[https://www.youtube.com/watch?v=aqz-KE-bpKQ](https://www.youtube.com/watch?v=aqz-KE-bpKQ)"
 
     # Call the function
     download_video_max_720p(video_url, download_path="My_Video_Downloads")
-Change the video_url variable inside the if __name__ == "__main__": block to the URL you want to download.
+```
 
-Run the script. The video will be downloaded to the folder specified in download_path.
+3.  Change the `video_url` variable inside the `if __name__ == "__main__":` block to the URL you want to download.
+4.  Run the script. The video will be downloaded to the folder specified in `download_path`.
 
-Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request to suggest improvements or report bugs.
+## Contributing
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Contributions are welcome\! Feel free to open an issue or submit a pull request to suggest improvements or report bugs.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+```
+```
