@@ -1,4 +1,3 @@
-````markdown
 # YouTube Video Downloader (Max 720p)
 
 This Python script allows you to download YouTube videos (including Shorts) using the `pytubefix` library.
@@ -15,7 +14,7 @@ Make sure you have Python installed. You can install the required library using 
 
 ```bash
 pip install pytubefix
-````
+```
 
 ## Usage
 
